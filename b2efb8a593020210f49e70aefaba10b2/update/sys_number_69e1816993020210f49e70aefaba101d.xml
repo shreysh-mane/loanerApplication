@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_951300_loaner_0_loaner_request">x_951300_loaner_0_loaner_request</category>
+        <maximum_digits>6</maximum_digits>
+        <number>2000</number>
+        <prefix>LNR</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>shreysh</sys_created_by>
+        <sys_created_on>2024-05-08 11:12:04</sys_created_on>
+        <sys_id>69e1816993020210f49e70aefaba101d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LNR</sys_name>
+        <sys_package display_value="Loaner Request" source="x_951300_loaner_0">b2efb8a593020210f49e70aefaba10b2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">b2efb8a593020210f49e70aefaba10b2</sys_scope>
+        <sys_update_name>sys_number_69e1816993020210f49e70aefaba101d</sys_update_name>
+        <sys_updated_by>shreysh</sys_updated_by>
+        <sys_updated_on>2024-05-08 11:12:04</sys_updated_on>
+    </sys_number>
+</record_update>
