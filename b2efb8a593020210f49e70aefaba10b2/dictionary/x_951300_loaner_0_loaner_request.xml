@@ -1,3 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="dde1416993020210f49e70aefaba10d5" extends="task" label="Loaner Request" max_length="40" name="x_951300_loaner_0_loaner_request" type="collection"/>
+    <element db_object_id="dde1416993020210f49e70aefaba10d5" extends="task" label="Loaner Request" max_length="40" name="x_951300_loaner_0_loaner_request" type="collection">
+        <element label="Demo Feild" max_length="40" name="demo_feild" type="string"/>
+        <element choice="1" function_definition="Santa Clara" label="Depot" max_length="40" name="depot" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New York" sequence="0" value="ny"/>
+                <element inactive_on_update="false" label="Santa Clara" sequence="1" value="sc"/>
+                <element inactive_on_update="false" label="London" sequence="2" value="london"/>
+                <element inactive_on_update="false" label="Other" sequence="3" value="other"/>
+            </choice>
+        </element>
+        <element label="End date" mandatory="true" max_length="255" name="end_date" type="glide_date_time"/>
+        <element choice="1" label="Item type" max_length="40" name="item_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Laptop" sequence="0" value="Laptop"/>
+                <element inactive_on_update="false" label="Projector" sequence="1" value="Projector"/>
+            </choice>
+        </element>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="Requested For" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Start date" mandatory="true" max_length="255" name="start_date" type="glide_date_time"/>
+    </element>
 </database>
